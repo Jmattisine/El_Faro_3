@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Periódico Local</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/tw7Rs4Rh/Leonardo-Phoenix-10-Design-a-logo-for-the-newspaper-El-Faro-me-3.jpg" alt="Logo El Faro" class="logo">
+        <h1>El Faro - Periódico Local</h1>
+        <p id="clock">Hora actual: </p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#deportes">Deportes</a></li>
+            <li><a href="#negocios">Negocios</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="section-container">
+            <h2>Últimas Noticias</h2>
+            <div id="articles-container" class="articles-grid">
+                <article>
+                    <h3>Inauguran nuevo parque municipal</h3>
+                    <p><strong>Categoría:</strong> Comunidad</p>
+                    <p>El alcalde inauguró ayer el nuevo parque central que contó con una inversión de $2 millones. El espacio incluye áreas verdes, juegos infantiles y una pista para caminar.</p>
+                    <div class="media-container">
+                        <!-- Video corregido para no superponerse -->
+                        <video width="100%" height="auto" controls style="display:block; margin-bottom: 20px;">
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                </article>
+            </div>
+            <h3>Añadir un nuevo artículo</h3>
+            <form id="article-form">
+                <input type="text" id="article-title" placeholder="Título del artículo" required><br>
+                <textarea id="article-description" placeholder="Descripción del artículo" required></textarea><br>
+                <button type="submit">Añadir Artículo</button>
+            </form>
+            <p id="article-count">Total de artículos: 0</p>
+            <button class="back-to-top" onclick="window.location.href='#inicio';">Volver al Inicio</button>
+        </section>
+        
+        <!-- Sección Deportes -->
+        <section id="deportes" class="section-container">
+            <h2>Noticias de Deportes</h2>
+            <div class="articles-grid">
+                <article>
+                    <h3>Equipo local clasifica a torneo nacional</h3>
+                    <p><strong>Categoría:</strong> Fútbol</p>
+                    <p>El equipo de fútbol de la ciudad logró su pase al torneo nacional tras vencer 2-1 en el partido de clasificación.</p>
+                    <img src="https://www.municipalidadvicuna.cl/wp-content/uploads/2021/10/copa-milo-1.png" alt="Partido de fútbol" style="width:100%; max-width:600px;">
+                </article>
+                
+                <article>
+                    <h3>Maratonista local gana competencia regional</h3>
+                    <p><strong>Categoría:</strong> Atletismo</p>
+                    <p>Juan Pérez completó el maratón en 2 horas 15 minutos, estableciendo nuevo récord regional.</p>
+                </article>
+                
+                <article>
+                    <h3>Inauguran nueva piscina olímpica</h3>
+                    <p><strong>Categoría:</strong> Natación</p>
+                    <p>Las instalaciones estarán abiertas al público a partir del próximo lunes.</p>
+                </article>
+            </div>
+            <h3>Otras Noticias Deportivas</h3>
+            <div>
+                <p>Selección juvenil de básquetbol inicia preparación para campeonato sudamericano.</p>
+            </div>
+            <button class="back-to-top" onclick="window.location.href='#inicio';">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección Negocios -->
+        <section id="negocios" class="section-container">
+            <h2>Noticias de Negocios</h2>
+            <div class="articles-grid">
+                <article>
+                    <h3>Nueva startup local recibe inversión millonaria</h3>
+                    <p><strong>Categoría:</strong> Emprendimiento</p>
+                    <p>TechSolutions, empresa fundada por jóvenes de la ciudad, recibió $5 millones de dólares en financiamiento de capital de riesgo.</p>
+                    <img src="https://www.beedigital.es/wp-content/uploads/2020/09/las-diferencias-entre-una-startup-y-una-pequena-empresa-1.jpg" alt="Startup local" style="width:100%; max-width:600px;">
+                </article>
+                
+                <article>
+                    <h3>Inauguran nuevo centro comercial</h3>
+                    <p><strong>Categoría:</strong> Comercio</p>
+                    <p>Con una inversión de $50 millones, el nuevo centro comercial abrirá sus puertas el próximo mes con más de 100 tiendas.</p>
+                </article>
+                
+                <article>
+                    <h3>Taller para emprendedores este sábado</h3>
+                    <p><strong>Categoría:</strong> Capacitación</p>
+                    <p>La cámara de comercio organiza un taller gratuito sobre marketing digital para pequeños negocios.</p>
+                </article>
+            </div>
+            <button class="back-to-top" onclick="window.location.href='#inicio';">Volver al Inicio</button>
+        </section>
+
+        <section id="contacto" class="section-container">
+            <h2>Formulario de Contacto</h2>
+            <form id="contact-form">
+                <input type="text" id="contact-name" placeholder="Tu nombre" required><br>
+                <textarea id="contact-message" placeholder="Tu mensaje" required></textarea><br>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Faro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
